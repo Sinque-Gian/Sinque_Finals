@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    color: #222;
+}
+
+/* NAVIGATION ----------------------------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #0d1b2a;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #00aaff;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* HERO SECTION -------------------------------- */
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #1b263b, #415a77);
+    color: white;
+}
+
+.hero-box {
+    background: rgba(255, 255, 255, 0.08);
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    backdrop-filter: blur(6px);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00aaff;
+    transition: 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    border-color: white;
+}
+
+.download-btn {
+    margin-top: 18px;
+    padding: 12px 25px;
+    border: none;
+    background: #00aaff;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #0088cc;
+    transform: translateY(-3px);
+}
+
+/* SECTIONS ----------------------------------- */
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* SKILLS -------------------------------------- */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-card {
+    padding: 15px 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    background: #00aaff;
+    color: white;
+}
+
+/* RESPONSIVE ----------------------------------- */
+
+@media (max-width: 768px) {
+    #navLinks {
+        display: none;
+        flex-direction: column;
+        background: #0d1b2a;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    #navLinks li {
+        margin: 12px 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
