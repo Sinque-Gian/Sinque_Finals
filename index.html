@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Gian.Dev</div>
+
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="menuBtn" class="menu-btn">☰</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-box">
+            <img src="profile.jpg" class="profile-img" alt="My Photo">
+            <h1>Gian Sinque</h1>
+            <p>Aspiring Web Developer</p>
+
+            <button class="download-btn" onclick="downloadResume()">
+                Download Resume
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a dedicated student and aspiring developer with experience in
+            C++, HTML, CSS, and JavaScript. I love building websites and improving
+            my skills through projects.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-card">C++ Programming</div>
+            <div class="skill-card">HTML / CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Responsive Web Design</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: gian@example.com</p>
+        <p>Phone: 09xx xxx xxxx</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
